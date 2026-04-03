@@ -1,0 +1,31 @@
+{
+  "check-site": "https://check-ec8.pages.dev/ping.txt",
+  "expected-status": 200,
+  "expected-body": "ok-proxy-check",
+  "proxy-type": "http",
+  "http_threads": 800,
+  "queue_size": 16000,
+  "deduplicate_input": false,
+  "deduplicate_output": true,
+  "headers": {
+    "user-agent": "Mozilla/5.0 (compatible; ZmapProxyScanner/2.0; +https://check-ec8.pages.dev/ping.txt)",
+    "accept": "text/plain,*/*;q=0.8"
+  },
+  "print_ips": {
+    "enabled": false,
+    "display-ip-info": false,
+    "max-concurrent": 4,
+    "timeout": 5
+  },
+  "report_proxy": {
+    "enabled": false,
+    "url": "https://shareproxy.pro/proxy.php",
+    "max-concurrent": 4,
+    "timeout": 15
+  },
+  "timeout": {
+    "http_timeout": 4,
+    "socks4_timeout": 5,
+    "socks5_timeout": 5
+  }
+}
